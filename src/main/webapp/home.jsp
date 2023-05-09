@@ -17,7 +17,24 @@
     <center><table>
             <tr>
                 <td>
-                    <a href="">primer elemento</a>
+                    <a href="Clientes">Registro de clientes</a>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <a href="">Catalogo</a>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <a href="">----</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="Libros">Registro de Libros</a>
                 </td>
                 <td>
 
@@ -34,24 +51,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="">primer elemento</a>
-                </td>
-                <td>
-
-                </td>
-                <td>
-                    <a href="">primer elemento</a>
-                </td>
-                <td>
-
-                </td>
-                <td>
-                    <a href="">primer elemento</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="">primer elemento</a>
+                    <a href="Usuarios">Registro de Usuarios</a>
                 </td>
                 <td>
 

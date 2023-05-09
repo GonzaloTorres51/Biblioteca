@@ -8,6 +8,18 @@
         <servlet-name>login_Controller</servlet-name>
         <servlet-class>Controllers.login_Controller</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>clientes_Controller</servlet-name>
+        <servlet-class>Controllers.clientes_Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>libros_Controller</servlet-name>
+        <servlet-class>Controllers.libros_Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>usuarios_Controller</servlet-name>
+        <servlet-class>Controllers.usuarios_Controller</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>home_Controller</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -15,6 +27,18 @@
     <servlet-mapping>
         <servlet-name>login_Controller</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>clientes_Controller</servlet-name>
+        <url-pattern>/Clientes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>libros_Controller</servlet-name>
+        <url-pattern>/Libros</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>usuarios_Controller</servlet-name>
+        <url-pattern>/Usuarios</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
