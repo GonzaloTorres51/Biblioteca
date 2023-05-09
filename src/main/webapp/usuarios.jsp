@@ -19,9 +19,9 @@
                     <h3>Registro de Usuarios</h3>
                     <br>
                     <form action="" method="" onsubmit="return validarForm()">
-                        <input type="text" name="" placeholder="rut" id="rut" onkeyup="validaRut()"></input><br>
-                        <input type="text" name="" placeholder="dv" id="dv" readonly></input><br>
-                        <input type="text" name="" placeholder="nombre" id=""></input><br>
+                        <input type="text" name="rut_usuario" placeholder="rut" id="rut" onkeyup="validaRut()"></input><br>
+                        <input type="text" name="dv_usuario" placeholder="dv" id="dv" readonly></input><br>
+                        <input type="text" name="nombre_usuario" placeholder="nombre" id=""></input><br>
                         <button type="submit">Ingresar</button>
                     </form>
                 </td>

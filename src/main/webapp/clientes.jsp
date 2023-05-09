@@ -19,12 +19,12 @@
                     <h3>Registro de Clientes</h3>
                     <br>
                     <form action="" method="" onsubmit="return validarForm()">
-                        <input type="text" name="" placeholder="rut" id="rut" onkeyup="validaRut()"></input><br>
-                        <input type="text" name="" placeholder="dv" id="dv" readonly></input><br>
-                        <input type="text" name="" placeholder="nombre" id=""></input><br>
-                        <input type="text" name="" placeholder="telefono" id=""></input><br>
-                        <input type="mail" name="" placeholder="correo" id=""></input><br>
-                        <input type="date" name="" placeholder="fecha de Nacimento" id=""></input><br>
+                        <input type="text" name="rut_cliente" placeholder="rut" id="rut" onkeyup="validaRut()"></input><br>
+                        <input type="text" name="dv_cliente" placeholder="dv" id="dv" readonly></input><br>
+                        <input type="text" name="nombre_cliente" placeholder="nombre" id=""></input><br>
+                        <input type="text" name="telefono_cliente" placeholder="telefono" id=""></input><br>
+                        <input type="mail" name="correo_cliente" placeholder="correo" id=""></input><br>
+                        <input type="date" name="f_nacimiento_cliente" placeholder="fecha de Nacimento" id=""></input><br>
                         <button type="submit">Ingresar</button>
                     </form>
                 </td>
