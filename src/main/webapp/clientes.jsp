@@ -18,7 +18,7 @@
                 <td>
                     <h3>Registro de Clientes</h3>
                     <br>
-                    <form action="" method="" onsubmit="return validarForm()">
+                    <form action="" method="post" onsubmit="return validarForm()">
                         <input type="text" name="rut_cliente" placeholder="rut" id="rut" onkeyup="validaRut()"></input><br>
                         <input type="text" name="dv_cliente" placeholder="dv" id="dv" readonly></input><br>
                         <input type="text" name="nombre_cliente" placeholder="nombre" id=""></input><br>

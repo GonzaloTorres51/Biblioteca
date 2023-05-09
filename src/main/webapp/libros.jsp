@@ -18,7 +18,7 @@
                 <td>
                     <h3>Registro de Libros</h3>
                     <br>
-                    <form action="" method="" onsubmit="return validarForm()">
+                    <form action="" method="post" onsubmit="return validarForm()">
                         <input type="text" name="nombre_libro" placeholder="nombre" id=""></input><br>
                         <input type="text" name="editorial_libro" placeholder="Editorial" id=""></input><br>
                         <input type="text" name="autor_libro" placeholder="Autor" id=""></input><br>
