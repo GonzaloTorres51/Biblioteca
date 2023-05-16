@@ -40,13 +40,13 @@
 
                 </td>
                 <td>
-                    <a href="">primer elemento</a>
+                    <a href="">----</a>
                 </td>
                 <td>
 
                 </td>
                 <td>
-                    <a href="">primer elemento</a>
+                    <a href="">----</a>
                 </td>
             </tr>
             <tr>
@@ -57,13 +57,30 @@
 
                 </td>
                 <td>
-
+                    <a href="">----</a>
                 </td>
                 <td>
 
                 </td>
                 <td>
-                    <a href="">primer elemento</a>
+                    <a href="">----</a>
+                </td>
+            </tr>
+                        <tr>
+                <td>
+                    <a href="">----</a>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <a href="editoriales.jsp">Editoriales</a>
+                </td>
+                <td>
+
+                </td>
+                <td>
+                    <a href="autores.jsp">Autores</a>
                 </td>
             </tr>
 

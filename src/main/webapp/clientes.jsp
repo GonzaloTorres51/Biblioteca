@@ -13,7 +13,7 @@
     </head>
     <body>
     <center><h2>Clientes</h2></center>
-    <center><table>
+    <center><table border="1">
             <tr>
                 <td>
                     <h3>Registro de Clientes</h3>
@@ -29,7 +29,15 @@
                     </form>
                 </td>
                 <td>
-                    <!<!-- comment -->
+
+                    <table border="1">
+                        <tr>
+                            <td>
+                                fg
+                            </td>
+                        </tr>
+                    </table>
+
                 </td>
             </tr>
         </table></center>

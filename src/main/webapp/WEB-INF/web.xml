@@ -20,6 +20,14 @@
         <servlet-name>usuarios_Controller</servlet-name>
         <servlet-class>Controllers.usuarios_Controller</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>autores_Controller</servlet-name>
+        <servlet-class>Controllers.autores_Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>editoriales__Controller</servlet-name>
+        <servlet-class>Controllers.editoriales__Controller</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>home_Controller</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -39,6 +47,14 @@
     <servlet-mapping>
         <servlet-name>usuarios_Controller</servlet-name>
         <url-pattern>/Usuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>autores_Controller</servlet-name>
+        <url-pattern>/autores_Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editoriales__Controller</servlet-name>
+        <url-pattern>/editoriales__Controller</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
