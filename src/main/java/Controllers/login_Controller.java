@@ -6,7 +6,9 @@ package Controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -28,20 +30,13 @@ public class login_Controller extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-
-            String tipoCuenta_Usuario = request.getParameter("tipo_Cuenta");
-            String nombre_Usuario = request.getParameter("nombre_usuario");
-            String contraseña_Usuario = request.getParameter("pwd_usuario");
-
-            out.print("Tipo de Cuenta: " + tipoCuenta_Usuario + "<br>");
-            out.print("Nombre de Usuario: " + nombre_Usuario + "<br>");
-            out.print("Pwd de Usuario: " + contraseña_Usuario + "<br>");
-            
+       
             //out.print("<a href=\"home.jsp\" > Home </a>");
+            
 
             response.sendRedirect("home.jsp");
          //   RequestDispatcher enlaceHome = request.getRequestDispatcher("/home.jsp");
@@ -61,7 +56,11 @@ public class login_Controller extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(login_Controller.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -75,7 +74,11 @@ public class login_Controller extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try {
+            processRequest(request, response);
+        } catch (SQLException ex) {
+            Logger.getLogger(login_Controller.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
