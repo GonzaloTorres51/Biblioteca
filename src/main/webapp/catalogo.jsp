@@ -15,6 +15,9 @@
     <center><h2>Informacion de Inventario</h2></center>
     <center><table border="1" style="text-align: center;">
             <tr>
+                <td style="display:none;">
+                    <input name="" id="id_pruba" value=""></input>
+                </td>
                 <td>
                     Nombre
                 </td>
@@ -57,4 +60,9 @@
 
         </table></center>
 </body>
+<footer>
+    <script>
+        
+    </script>
+</footer>
 </html>
