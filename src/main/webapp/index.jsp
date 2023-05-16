@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
@@ -39,24 +40,7 @@
                         </form>
                         </body>
 
-                        <footer>
-                            <script>
-                                function ValidarLogin() {
-                                    var mensaje = "";
-                                    if ((document.getElementById("id_TipoCuenta").value) == "") {
-                                        mensaje = mensaje + "Falta ingresar: Tipo de Cuenta\n";
-                                    }
-                                    if (document.getElementById("id_NombreUsuario").value == "") {
-                                        mensaje = mensaje + "Falta ingresar: Usuario \n";
-                                    }
-                                    if (document.getElementById("id_pwdUsuario").value == "") {
-                                        mensaje = mensaje + "Falta ingresar: Contraseña \n";
-                                    }
-                                    if (mensaje != "") {
-                                        alert(mensaje);
-                                        return false;
-                                    }
-                                }
-                            </script>
+                       <footer>
+                           <script src="JavaScript/scripts.js" type="text/javascript"></script>
                         </footer>
                         </html>
