@@ -12,16 +12,16 @@
         <title>JSP Page</title>
     </head>
     <body>
-<center><h2>Editoriales</h2></center>
-    <center><table>
+    <center><h2>Editoriales</h2></center>
+    <center><table border="1" style="text-align: center;">
             <tr>
                 <td>
                     <h3>Mantenedor de Editoriales</h3>
                     <br>
                     <form action="" method="post" onsubmit="return validarForm()">
                         <input type="text" name="nombre_editorial" placeholder=" nombre editorial" id=""></input><br>
-                        
-                        <button type="submit">Ingresar</button>
+                        <br>
+                        <center><button type="submit">Ingresar</button></center>
                     </form>
                 </td>
                 <td>
@@ -29,5 +29,5 @@
                 </td>
             </tr>
         </table></center>
-    </body>
+</body>
 </html>

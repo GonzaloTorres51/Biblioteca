@@ -13,7 +13,7 @@
     </head>
     <body>
     <center><h2>Libros</h2></center>
-    <center><table>
+    <center><table border="1" style="text-align: center;">
             <tr>
                 <td>
                     <h3>Registro de Libros</h3>
@@ -25,7 +25,8 @@
                         <input type="text" name="stock_libro" placeholder="stock" id=""></input><br>
                         <input type="text" name="cantidad_actual_libro" placeholder="cantidad Actual" id=""></input><br>
                         <input type="text" name="restric_edad_libro" placeholder="Restriccion de Edad" id=""></input><br>
-                        <button type="submit">Ingresar</button>
+                        <br>
+                        <center><button type="submit">Ingresar</button></center>
                     </form>
                 </td>
                 <td>

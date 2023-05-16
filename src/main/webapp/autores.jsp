@@ -13,15 +13,15 @@
     </head>
     <body>
         <center><h2>Autores</h2></center>
-    <center><table>
+    <center><table border="1" style="text-align: center;">
             <tr>
                 <td>
                     <h3>Mantenedor de Autores</h3>
                     <br>
                     <form action="" method="post" onsubmit="return validarForm()">
                         <input type="text" name="nombre_autor" placeholder="nombre autor" id=""></input><br>
-                        
-                        <button type="submit">Ingresar</button>
+                        <br>
+                        <center><button type="submit">Ingresar</button></center>
                     </form>
                 </td>
                 <td>

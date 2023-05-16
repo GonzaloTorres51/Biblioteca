@@ -13,7 +13,7 @@
     </head>
     <body>
     <center><h2>Clientes</h2></center>
-    <center><table border="1">
+    <center><table border="1" style="text-align: center;">
             <tr>
                 <td>
                     <h3>Registro de Clientes</h3>
@@ -25,6 +25,7 @@
                         <input type="text" name="telefono_cliente" placeholder="telefono" id=""></input><br>
                         <input type="mail" name="correo_cliente" placeholder="correo" id=""></input><br>
                         <input type="date" name="f_nacimiento_cliente" placeholder="fecha de Nacimento" id=""></input><br>
+                        <br>
                         <button type="submit">Ingresar</button>
                     </form>
                 </td>

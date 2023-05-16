@@ -13,7 +13,7 @@
     </head>
     <body>
         <center><h2>Usuarios</h2></center>
-    <center><table>
+    <center><table border="1" style="text-align: center;">
             <tr>
                 <td>
                     <h3>Registro de Usuarios</h3>
@@ -22,7 +22,8 @@
                         <input type="text" name="rut_usuario" placeholder="rut" id="rut" onkeyup="validaRut()"></input><br>
                         <input type="text" name="dv_usuario" placeholder="dv" id="dv" readonly></input><br>
                         <input type="text" name="nombre_usuario" placeholder="nombre" id=""></input><br>
-                        <button type="submit">Ingresar</button>
+                        <br>
+                        <center><button type="submit">Ingresar</button></center>
                     </form>
                 </td>
                 <td>

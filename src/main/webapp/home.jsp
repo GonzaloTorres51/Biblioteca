@@ -14,7 +14,7 @@
     <body>
     <center><h1>Home</h1></center>
 
-    <center><table>
+    <center><table border="1" style="text-align: center;">
             <tr>
                 <td>
                     <a href="Clientes">Registro de clientes</a>
