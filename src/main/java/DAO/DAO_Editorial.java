@@ -11,5 +11,15 @@ public class DAO_Editorial {
         public void setVCH_NOMBRE_EDITORIAL(String _VCH_NOMBRE_EDITORIAL){
         this._VCH_NOMBRE_EDITORIAL = _VCH_NOMBRE_EDITORIAL;
     }
+        
+        public Boolean ValidaSubida(String nom){
+            Boolean flag = true;
+            if (!nom.isEmpty()) {
+                setVCH_NOMBRE_EDITORIAL(nom);
+            }else{
+                return false;
+            }
+            return flag;
+        }
     
 }

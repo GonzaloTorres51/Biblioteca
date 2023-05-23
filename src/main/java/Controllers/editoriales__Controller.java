@@ -4,8 +4,11 @@
  */
 package Controllers;
 
+import DAO.DAO_Editorial;
+import Modals.CRUD_Editorial;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -29,29 +32,38 @@ public class editoriales__Controller extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try ( PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet editoriales__Controller</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet editoriales__Controller at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+
+        String mensaje = "";
+        String insertEditorial;
+
+        try {
+            DAO_Editorial editorial = validacionUsuario(request);
+            CRUD_Editorial crud_editorial = new CRUD_Editorial();
+            insertEditorial = crud_editorial.Create(editorial);
+            mensaje = insertEditorial;
+            if (Integer.parseInt(insertEditorial) != 0) {
+                mensaje = "Editorial grabada con exito";
+            }
+        } catch (NumberFormatException ex) {
+            mensaje = ex.toString();
+        }
+
+        request.setAttribute("mensaje", mensaje);
+        request.getRequestDispatcher("home.jsp").forward(request, response);
+
+    }
+
+    protected DAO_Editorial validacionUsuario(HttpServletRequest request) {
+        DAO_Editorial editorial = new DAO_Editorial();
+        String nombre = request.getParameter("nombre_editorial");
+        
+        if (editorial.ValidaSubida(nombre)) {
+            return editorial;
+        }else{
+            return new DAO_Editorial();
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
