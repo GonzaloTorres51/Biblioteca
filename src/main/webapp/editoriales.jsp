@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Editoriales</title>
+        <title>JSP Page</title>
     </head>
     <body>
     <center><h2>Editoriales</h2></center>
@@ -18,7 +18,7 @@
                 <td>
                     <h3>Mantenedor de Editoriales</h3>
                     <br>
-                    <form action="editoriales_Controller" method="post" onsubmit="return validarForm()">
+                    <form action="editoriales__Controller" method="post" onsubmit="return validarForm()">
                         <input type="text" name="nombre_editorial" placeholder=" nombre editorial" id=""></input><br>
                         <br>
                         <center><button type="submit">Ingresar</button></center>
