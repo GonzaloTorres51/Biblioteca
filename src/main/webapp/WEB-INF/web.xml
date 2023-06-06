@@ -32,6 +32,10 @@
         <servlet-name>catalogo_Controller</servlet-name>
         <servlet-class>Controllers.catalogo_Controller</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Buscar_editorial_Controller</servlet-name>
+        <servlet-class>Controllers.Buscar_editorial_Controller</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>home_Controller</servlet-name>
         <url-pattern>/Home</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>catalogo_Controller</servlet-name>
         <url-pattern>/catalogo_Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Buscar_editorial_Controller</servlet-name>
+        <url-pattern>/Buscar_editorial_Controller</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
