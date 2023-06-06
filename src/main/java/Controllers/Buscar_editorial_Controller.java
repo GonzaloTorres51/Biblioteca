@@ -40,9 +40,9 @@ public class Buscar_editorial_Controller extends HttpServlet {
        String respuesta = "";
         if (!listaEditorial.isEmpty()) {
             for (int i = 0; i < listaEditorial.size(); i++) {
-                respuesta = elementBuilder(listaEditorial.get(i));            
+                respuesta = respuesta + elementBuilder(listaEditorial.get(i));            
             }
-            request.setAttribute("respuesta", "<div class='formulario'>" + parametro + "</div>");
+            request.setAttribute("respuesta", "<div class='formulario'>" + respuesta + "</div>");
             request.getRequestDispatcher("Buscar_Editorial.jsp").forward(request, response);
         }else{
             String mensaje = "<div class='formulario'><label class = \"label-item\"> <b> No se han encontrado elementos para la busqueda: " + parametro + "</b> >/label></div>";

@@ -9,6 +9,15 @@ public class DAO_Editorial {
         return _VCH_NOMBRE_EDITORIAL;
     }
 
+    public DAO_Editorial() {
+
+    }
+
+    public DAO_Editorial( int editar, String nombre) {
+        this._ID_EDITORIAL = editar;
+        this._VCH_NOMBRE_EDITORIAL = nombre;
+    }
+
     public void setVCH_NOMBRE_EDITORIAL(String _VCH_NOMBRE_EDITORIAL) {
         this._VCH_NOMBRE_EDITORIAL = _VCH_NOMBRE_EDITORIAL;
     }
